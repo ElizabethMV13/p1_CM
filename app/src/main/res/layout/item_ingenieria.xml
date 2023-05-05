@@ -13,8 +13,8 @@
     >
 
     <RelativeLayout
-        android:layout_width="394dp"
-        android:layout_height="205dp"
+        android:layout_width="321dp"
+        android:layout_height="200dp"
         android:padding="16dp">
 
         <ImageView
@@ -51,7 +51,7 @@
             android:layout_toEndOf="@id/item_img"
             android:layout_toRightOf="@id/item_img"
             android:textColor="@color/text"
-            android:textSize="13sp"
+            android:textSize="12sp"
             android:textStyle="bold" />
 
         <TextView
