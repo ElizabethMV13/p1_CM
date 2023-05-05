@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">p1_CM</string>
+    <string name="creador">Mendoza de la Vega Dulce Elizabeth</string>
+    <string name="version1">Version</string>
+    <string name="version2">Pixel 4a API 30</string>
+    <string name="title_carreras">Careers in engineering college</string>
+    <string name="submit">Send</string>
+    <string name="back">Go back</string>
+    <string name="go">See</string>
+    <string name="welcome">Welcome</string>
+    <string name="form">To answer</string>
+    <string name="opt1">About us</string>
+    <string name="opt2">Form</string>
+    <string name="opt3">List of university majors</string>
+    <string name="from">from</string>
+    <string name="name_logo">FOX APP TECHNOLOGY</string>
+    <string name="text">I am Dulce Elizabeth Mendoza de la Vega and this is my exercise 1 of the \"Mobile Computing\" subject. In this application, Kotlin is used to create an attractive and easy-to-use user interface, as well as to process and analyze data from a form.</string>
+    <string name="num_cuenta_from">Account number</string>
+    <string name="correo_form">Email</string>
+    <string name="name_form">Name(s)</string>
+    <string name="last_name_form">Last name</string>
+    <string name="date_form">Birthdate</string>
+    <string name="carrera_form">College career</string>
+    <string name="form_title">Exercise Form 1</string>
+    <string name="messageAlert">"Are you sure you want to go out?"</string>
+    <string name="titleAlert">"Back to start"</string>
+    <string name="titleResumen">"Quiz Summary"</string>
+    <string name="error">Wrong</string>
+    <string name="ok">"Ok"</string>
+    <string name="messageError">Sorry, but it is not possible to submit the form. Please review the following: </string>
+    <string name="concat1">--> Enter values in the field </string>
+    <string name="concat2">--> Enter a valid value in the field </string>
+    <string name="concat3">--> Enter a 9-digit account number </string>
+    <string name="concat4">--> Enter a birthday date </string>
+    <string name="concat5">--> Select a university degree </string>
+</resources>

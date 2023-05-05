@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">p1_CM</string>
+    <string name="creador">Mendoza de la Vega Dulce Elizabeth</string>
+    <string name="version1">Versión</string>
+    <string name="version2">Pixel 4a API 30</string>
+    <string name="title_carreras">Carreras en la FI</string>
+    <string name="submit">Enviar</string>
+    <string name="back">Regresar</string>
+    <string name="go">Ver</string>
+    <string name="welcome">Bienvenidos</string>
+    <string name="form">Constestar</string>
+    <string name="opt1">Quienes Somos</string>
+    <string name="opt2">Formulario</string>
+    <string name="opt3">Lista de carreras</string>
+    <string name="from">de</string>
+    <string name="name_logo">FOX APP TECHNOLOGY</string>
+    <string name="name_form">Nombre(s)</string>
+    <string name="last_name_form">Apellidos(s)</string>
+    <string name="correo_form">Correo electrónico</string>
+    <string name="num_cuenta_from">Número de cuenta</string>
+    <string name="text">Soy Dulce Elizabeth Mendoza de la Vega y este es mi ejercicio 1 de la materia de "Computo Móvil". En esta aplicación, Kotlin se utiliza para crear una interfaz de usuario atractiva y fácil de usar, así como para procesar y analizar los datos de un formulario.</string>
+    <string name="date_form">Fecha de nacimiento</string>
+    <string name="carrera_form">Carrera universitaria</string>
+    <string name="form_title">Formulario Ejercicio 1</string>
+    <string name="messageAlert">¿Estas seguro de querer salir?</string>
+    <string name="titleAlert">Regresar a inicio</string>
+    <string name="titleResumen">Resumen del cuestionario</string>
+    <string name="error">Error</string>
+    <string name="ok">"Ok"</string>
+    <string name="messageError">Lo siento, pero no es posible enviar el formulario. Por favor revisa lo siguiente: </string>
+    <string name="concat1">--> Ingresa valores en el campo de </string>
+    <string name="concat2">--> Ingresa un valor valido en el campo </string>
+    <string name="concat3">--> Ingresa un número de cuenta de 9 dígitos </string>
+    <string name="concat4">--> Ingresa una fecha de cumpleaños </string>
+    <string name="concat5">--> Selecciona una carrera universitaria </string>
+</resources>
