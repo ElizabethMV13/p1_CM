@@ -219,7 +219,8 @@ class FormulationMain : AppCompatActivity() {
         var mes = mes.toInt()
         val dia = dia.toInt()
 
-        if (mes >=8 ){ mes = mes + 1}
+        if (mes <=8 ){ mes = mes + 1}
+        println("mensaje"+mes)
 
         return when {
             mes == 1 && dia >= 20 || mes == 2 && dia < 19 -> "Acuario"
