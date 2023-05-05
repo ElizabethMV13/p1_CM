@@ -1,3 +1,4 @@
+
 <h1># INDICE</h1>
 
 
@@ -72,23 +73,30 @@ El nivel mínimo de API a soportar será el 23.
 <h1>2. Elementos extras</h1>
 
 
---> Manejo de recyclerView para el uso de las target
-
---> Inserción y manejo de audio en MainActivity
+--> Manejo de recyclerView para el uso del target
 
 --> Uso de Clases para el llenado de las recyclerView
 
+Por medio de una clase recupera los datos por medio de un listOf de les da formato y se visualiza en la opción de lisa de carreras
+
+--> Inserción y manejo de audio en MainActivity
+
+El audio se muestra solo en esa ventana, se detiene al cerrar la app o presionar algunos de los botones del menú
+
 --> Se agrego uso de GIFs
+
+Esto se esto se usó en el slash (esto con el fin de no ver una imagen en plano) y dentro de la view que se da en "Quienes somos"
 
 --> Creación de APK
 
---> Modificación del icono de la aplicación
+--> Se modifico el icono de la aplicación al descargarla
 
---> Uso de AlertDialog
+No pude lograr ver mi app en mis dispositivos para debuggear, por lo que decidí realizar el APK para poder instalarlo y ver que todo funcionara bien
 
---> Inserción de imagenes por medio de una URL con GLIDE
+--> Inserción de imágenes por medio de una URL con GLIDE
 
---> Envio y recepción de datos entre vistas por Parcelable implementation generator
+La imagen que se inserta en la respuesta del formulario es obtenida por internet, solo se necesita la URL 
 
+--> envió y recepción de datos entre vistas por Parcelable implementación generador
 
 
