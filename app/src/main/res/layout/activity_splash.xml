@@ -24,14 +24,15 @@
         android:layout_height="wrap_content"
         android:text="@string/from"
         android:textColor="@color/from"
-        android:textSize="28dp"
+        android:textSize="25dp"
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.751" />
+        app:layout_constraintVertical_bias="0.793" />
 
     <TextView
         android:id="@+id/text2_splash"
@@ -47,7 +48,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.874" />
+        app:layout_constraintVertical_bias="0.896" />
 
     <TextView
         android:id="@+id/text3_splash"
@@ -80,7 +81,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.921" />
+        app:layout_constraintVertical_bias="0.95" />
 
     <TextView
         android:id="@+id/textVersion2"

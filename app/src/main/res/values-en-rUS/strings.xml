@@ -34,4 +34,13 @@
     <string name="concat3">--> Enter a 9-digit account number </string>
     <string name="concat4">--> Enter a birthday date </string>
     <string name="concat5">--> Select a university degree </string>
+    <string name="salida"> Form results:</string>
+    <string name="bodyText"> Hi </string>
+    <string name="bodyText1"> Age: </string>
+    <string name="bodyText2"> completed years </string>
+    <string name="bodyText3"> Star sign: </string>
+    <string name="bodyText4"> Chinese zodiac sign: </string>
+    <string name="bodyText5"> Email: </string>
+    <string name="bodyText6"> Account number: </string>
+    <string name="bodyText7"> University degree : </string>
 </resources>

@@ -1,7 +1,6 @@
 package com.example.p1_cm
 
 class ingspinnerProvider {
-
     companion object{
         val listSpinner = listOf(
                 "Selecciona una opción",

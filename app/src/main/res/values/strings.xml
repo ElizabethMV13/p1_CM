@@ -33,4 +33,13 @@
     <string name="concat3">--> Ingresa un número de cuenta de 9 dígitos </string>
     <string name="concat4">--> Ingresa una fecha de cumpleaños </string>
     <string name="concat5">--> Selecciona una carrera universitaria </string>
+    <string name="salida"> Resultados del formulario: </string>
+    <string name="bodyText"> Hola  </string>
+    <string name="bodyText1"> Edad: </string>
+    <string name="bodyText2"> años cumplidos </string>
+    <string name="bodyText3"> Signo zodiacal: </string>
+    <string name="bodyText4"> Signo horóscopo chino: </string>
+    <string name="bodyText5"> Correo: </string>
+    <string name="bodyText6"> Número de cuenta: </string>
+    <string name="bodyText7"> Carrera: </string>
 </resources>

@@ -61,34 +61,35 @@ class FormulationMain : AppCompatActivity() {
             val month: Int = c.get(Calendar.MONTH)
             val year:Int = c.get(Calendar.YEAR)
             val emailPattern = "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}$".toRegex()
+
             var listaErrores: String = """"""
 
             if (nameEditText.isEmpty()) {
-                listaErrores = listaErrores + "\n " + getString(R.string.concat1) + getString(R.string.name_form)
+                listaErrores = listaErrores + "\n " + getString(R.string.concat1) + " " + getString(R.string.name_form)
             }
             if (!noContieneNumeros(nameEditText) && !nameEditText.isEmpty()) {
-                listaErrores = listaErrores+"\n " + getString(R.string.concat2) + getString(R.string.name_form)
+                listaErrores = listaErrores+"\n " + getString(R.string.concat2) + " " + getString(R.string.name_form)
             }
             if(lastNameEditText.isEmpty()){
-                listaErrores = listaErrores + "\n" + getString(R.string.concat1) + getString(R.string.last_name_form)
+                listaErrores = listaErrores + "\n" + getString(R.string.concat1) + " " + getString(R.string.last_name_form)
             }
             if (!noContieneNumeros(lastNameEditText) && !lastNameEditText.isEmpty()) {
-               listaErrores = listaErrores + "\n" + getString(R.string.concat2) + getString(R.string.last_name_form)
+               listaErrores = listaErrores + "\n" + getString(R.string.concat2) + " " + getString(R.string.last_name_form)
             }
 
             if(numberEditText.isEmpty()){
-                listaErrores = listaErrores + "\n" + getString(R.string.concat1) + getString(R.string.num_cuenta_from)
+                listaErrores = listaErrores + "\n" + getString(R.string.concat1) + " " + getString(R.string.num_cuenta_from)
             }
             if (numberEditText.length !=9 && !numberEditText.isEmpty()){
                 listaErrores = listaErrores + "\n" + getString(R.string.concat3)
             }
 
             if (emailEditText.isEmpty()){
-                listaErrores = listaErrores + "\n" + getString(R.string.concat1) + getString(R.string.correo_form)
+                listaErrores = listaErrores + "\n" + getString(R.string.concat1) + " " + getString(R.string.correo_form)
             }
             if (!emailEditText.matches(emailPattern) && !emailEditText.isEmpty()) {
                 listaErrores =
-                    listaErrores + "\n" + getString(R.string.concat2) + getString(R.string.correo_form)
+                    listaErrores + "\n" + getString(R.string.concat2) + " " + getString(R.string.correo_form)
             }
 
             if (posicion == 0) {
@@ -103,12 +104,13 @@ class FormulationMain : AppCompatActivity() {
                 val signoZodiacal = obtenerSignoZodiacal( "$month", "$day")
                 val (signoChino, elemento)= obtenerSignoChino("$year")
                 val edad = calcularEdad("$year","$month", "$day")
+                val urlImg = obtenerUrl(posicion)
 
 
                 val  intentSend: Intent = Intent(this,Resumen::class.java)
                 intentSend.putExtra(
                     "DataForm",
-                    DataForm("$nombreCompleto","$edad","$signoZodiacal","$signoChino","$elemento","$emailEditText","$numberEditText","$nameCarrera ","https://www.ingenieria.unam.mx/programas_academicos/images/carreras/computacion.jpg"))
+                    DataForm("$nombreCompleto","$edad","$signoZodiacal","$signoChino","$elemento","$emailEditText","$numberEditText","$nameCarrera ","$urlImg"))
                 startActivity(intentSend)
 
             } else {
@@ -143,6 +145,39 @@ class FormulationMain : AppCompatActivity() {
                 TODO("Not yet implemented")
             }
         }
+    }
+
+    private fun obtenerUrl(posicion: Int ): String {
+
+        val listUrl = listOf(
+            "https://www.ingenieria.unam.mx/programas_academicos/images/carreras/computacion.jpg",
+            "https://www.ingenieria.unam.mx/programas_academicos/images/carreras/biomedicos.jpg",
+            "https://www.ingenieria.unam.mx/programas_academicos/images/carreras/aeroespacial.jpg",
+            "https://www.ingenieria.unam.mx/programas_academicos/images/carreras/civil.jpg",
+            "https://www.ingenieria.unam.mx/programas_academicos/images/carreras/geomatica.jpg",
+            "https://www.ingenieria.unam.mx/programas_academicos/images/carreras/ambiental.jpg",
+            "https://www.ingenieria.unam.mx/programas_academicos/images/carreras/geofisica.jpg",
+            "https://www.ingenieria.unam.mx/programas_academicos/images/carreras/geologica.jpg",
+            "https://www.ingenieria.unam.mx/programas_academicos/images/carreras/petrolera.jpg",
+            "https://www.ingenieria.unam.mx/programas_academicos/images/carreras/minas.jpg",
+            "https://www.ingenieria.unam.mx/programas_academicos/images/carreras/electrica.jpg",
+            "https://www.ingenieria.unam.mx/programas_academicos/images/carreras/telecom.jpg",
+            "https://www.ingenieria.unam.mx/programas_academicos/images/carreras/mecanica.jpg",
+            "https://www.ingenieria.unam.mx/programas_academicos/images/carreras/industrial.jpg",
+            "https://www.ingenieria.unam.mx/programas_academicos/images/carreras/mecatronica.jpg"
+        )
+        var aux = 1
+        var urlImg = ""
+        for (url in listUrl) {
+            if(posicion == aux  ) {
+                urlImg = url
+            }
+            aux += 1
+
+        }
+
+        return urlImg
+
     }
 
     fun onClickScheduledDate(v: View?) {
@@ -220,7 +255,7 @@ class FormulationMain : AppCompatActivity() {
     fun noContieneNumeros(cadena: String): Boolean {
         //val patron = Regex("\\D+")
         //return patron.matches(cadena)
-        val patron = Regex("[a-zA-Z]+")
+        val patron = Regex("[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ\\s]+")
         return patron.matches(cadena)
     }
 

@@ -1,16 +1,22 @@
 package com.example.p1_cm
 
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var mp: MediaPlayer
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        mp = MediaPlayer.create(this,R.raw.ringtonesamelie)
+        mp.start()
 
         val btn1: Button = findViewById(R.id.button1)
 
@@ -36,5 +42,32 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent3)
         }
 
+    }
+
+    override fun onStart() {
+        super.onStart()
+            mp.start()
+    }
+
+
+    override fun onPause() {
+        super.onPause()
+        mp.pause()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        mp.pause()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        mp.pause()
+        mp.start()
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        mp.start()
     }
 }

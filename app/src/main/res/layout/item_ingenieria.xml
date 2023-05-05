@@ -11,9 +11,10 @@
     card_view:cardElevation="6dp"
     card_view:contentPadding="4dp"
     >
+
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="394dp"
+        android:layout_height="205dp"
         android:padding="16dp">
 
         <ImageView
@@ -23,43 +24,46 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="66dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="55dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp" />
 
         <TextView
             android:id="@+id/item_name"
-            android:layout_width="wrap_content"
+            android:layout_width="329dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:layout_toEndOf="@id/item_img"
-            android:layout_toRightOf="@id/item_img"
+            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:textSize="20sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/item_info"
-            android:layout_width="wrap_content"
+            android:layout_width="213dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/text"
+            android:layout_below="@id/item_name"
+            android:layout_marginTop="0dp"
             android:layout_toEndOf="@id/item_img"
             android:layout_toRightOf="@id/item_img"
-            android:layout_below="@id/item_name"
-            android:textSize="16sp"
+            android:textColor="@color/text"
+            android:textSize="13sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/item_mas"
-            android:layout_width="wrap_content"
+            android:layout_width="208dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/text"
+            android:layout_below="@id/item_info"
+            android:layout_marginTop="0dp"
             android:layout_toEndOf="@id/item_img"
             android:layout_toRightOf="@id/item_img"
-            android:layout_below="@id/item_info"
-            android:textSize="12sp"
+            android:textColor="@color/text"
+            android:textSize="10sp"
             android:textStyle="bold" />
 
 
