@@ -73,13 +73,21 @@ El nivel mínimo de API a soportar será el 23.
 
 
 --> Manejo de recyclerView para el uso de las target
+
 --> Inserción y manejo de audio en MainActivity
+
 --> Uso de Clases para el llenado de las recyclerView
+
 --> Se agrego uso de GIFs
+
 --> Creación de APK
+
 --> Modificación del icono de la aplicación
+
 --> Uso de AlertDialog
+
 --> Inserción de imagenes por medio de una URL con GLIDE
+
 --> Envio y recepción de datos entre vistas por Parcelable implementation generator
 
 
